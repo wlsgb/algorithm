@@ -2,6 +2,11 @@ package codeup.sort;
 
 import java.util.Scanner;
 
+/**
+ * 1443 : 삽입 정렬
+ *
+ * https://codeup.kr/problem.php?id=1443
+ */
 public class InsertionSort {
 
 	public static void main(String[] args) {

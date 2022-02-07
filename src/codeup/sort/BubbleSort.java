@@ -2,6 +2,11 @@ package codeup.sort;
 
 import java.util.Scanner;
 
+/**
+ * 1441 : 버블 정렬
+ *
+ * https://codeup.kr/problem.php?id=1441
+ */
 public class BubbleSort {
 
 	public static void main(String[] args) {
@@ -16,6 +21,24 @@ public class BubbleSort {
 			numbers[i] = Integer.parseInt(scanner.nextLine());
 		}
 
+		numbers = SelectionSort.solution(numbers);
+		
+		for (int i = 0; i < size; i++) {
+			System.out.println(numbers[i]);
+		}
+		
+		scanner.close();
+	}
+
+	/**
+	 * 버블 정렬
+	 * @param numbers
+	 * @return
+	 */
+	public static int[] solution(int[] numbers) {
+		// 숫자 개수
+		int size = numbers.length;
+
 		int temp;
 		// 정렬
 		for (int i = 0; i < size; i++) {
@@ -28,11 +51,7 @@ public class BubbleSort {
 				}
 			}
 		}
-		
-		for (int i = 0; i < size; i++) {
-			System.out.println(numbers[i]);
-		}
-		
-		scanner.close();
+
+		return numbers;
 	}
 }

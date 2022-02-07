@@ -2,6 +2,11 @@ package codeup.sort;
 
 import java.util.Scanner;
 
+/**
+ * 1441 : 버블 정렬
+ *
+ * https://codeup.kr/problem.php?id=1441
+ */
 public class SelectionSort {
 
 	public static void main(String[] args) {
