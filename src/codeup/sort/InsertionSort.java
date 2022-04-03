@@ -3,9 +3,33 @@ package codeup.sort;
 import java.util.Scanner;
 
 /**
- * 1443 : 삽입 정렬
+ * [1443 : 삽입 정렬] : https://codeup.kr/problem.php?id=1443
  *
- * https://codeup.kr/problem.php?id=1443
+ * - 문제 설명
+ * 오름차순 삽입 정렬은 '정렬된 데이터 셋에 뒤쪽에서 부터 원소를 하나씩 삽입하여 순서에 맞는 위치로 찾아가며 정렬하는 방식'이다.
+ * 이번 문제는 미리 작성된 코드를 보고 빈 칸에 들어갈 코드를 작성하는 것이다.
+ * 이 프로그램은 선택 정렬을 구현한 것이며, 실행 결과는 오름차순으로 정렬된다.
+ *
+ * - 입력
+ * 빈 칸에 들어갈 코드를 작성한다.
+ *
+ * - 출력
+ * 오름차순으로 정렬된 데이터가 출력된다.
+ *
+ * - 입력 예시
+ * 5
+ * 1
+ * 3
+ * 2
+ * 5
+ * 4
+ *
+ * - 출력 예시
+ * 1
+ * 2
+ * 3
+ * 4
+ * 5
  */
 public class InsertionSort {
 
@@ -22,7 +46,7 @@ public class InsertionSort {
 		}
 
 		// 결과 값
-		numbers = InsertionSort.solution(numbers);
+		numbers = InsertionSort.insertionSort(numbers);
 
 		// 출력
 		for (int i = 0; i < size; i++) {
@@ -37,7 +61,7 @@ public class InsertionSort {
 	 * @param numbers
 	 * @return
 	 */
-	public static int[] solution(int[] numbers) {
+	public static int[] insertionSort(int[] numbers) {
 		// 숫자 개수
 		int size = numbers.length;
 
