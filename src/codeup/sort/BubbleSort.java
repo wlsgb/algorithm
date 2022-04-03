@@ -66,15 +66,15 @@ public class BubbleSort {
 	public static int[] bubbleSort(int[] numbers) {
 		// 숫자 개수
 		int size = numbers.length;
-
+		// 임시 공간
 		int temp;
 		// 정렬
-		for (int i = 0; i < size; i++) {
-			for (int j = i + 1; j < size; j++) {
+		for (int i = 0; i < size - 1; i++) {
+			for (int j = 1; j < size - i; j++) {
 				// 앞의 숫자가 더 크다면
-				if (numbers[i] > numbers[j]) {
-					temp = numbers[i];
-					numbers[i] = numbers[j];
+				if (numbers[j - 1] > numbers[j]) {
+					temp = numbers[j - 1];
+					numbers[j - 1] = numbers[j];
 					numbers[j] = temp;
 				}
 			}
